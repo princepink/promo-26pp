@@ -1,0 +1,93 @@
+/**
+ *
+ */
+.bgbox {
+  position: absolute;
+  top: 20vh;
+  right: -5%;
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  border-radius: 96px 0 0 96px;
+}
+
+/**
+ *
+ */
+.sync {
+  width: 208px;
+  height: 208px;
+  background-color: var(--mantine-primary-color-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/**
+ *
+ */
+.float {
+  position: relative;
+}
+
+/**
+ *
+ */
+.paracard {
+  background-color: darkslateblue;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/**
+ *
+ */
+.sync2 {
+  width: 144px;
+  height: 144px;
+  background-color: darkturquoise;
+}
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/

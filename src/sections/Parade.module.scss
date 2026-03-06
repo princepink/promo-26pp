@@ -1,0 +1,92 @@
+/**
+ *
+ */
+.container {
+  // background-color: rgba(cyan, 0.5);
+  // border: 2px white dashed;
+  margin: 2rem auto;
+  // filter: blur(10px);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+}
+
+/**
+ *
+ *
+.carousel {
+  background-color: rgba(yellow, 0.5);
+  border: 1px red solid;
+}
+
+/**
+ *
+ */
+.slide {
+  // background-color: rgba(purple, 0.3);
+  // border: 1px blue solid;
+  display: inline-flex;
+  height: 72px;
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/

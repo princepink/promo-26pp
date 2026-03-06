@@ -1,0 +1,60 @@
+{
+  "author": "Pierre Pearlpuppy",
+  "description": "Minimal curriculum vitae of $t(author)",
+  "app": {
+    "title": "$t(author) - A Hyper Designer"
+  },
+  "meta": {
+    "title": "CV",
+    "description": "$t(description)"
+  },
+  "hero": {
+    "stimulate": "Drill Deeper"
+  },
+  "occupations": ["Hyper Designer", "Web Developer"],
+  "vistas": [
+    {
+      "title": "Vista_1",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis vel ligula porttitor sagittis. Integer laoreet cursus diam ac tempor. Duis ac dictum enim. Donec tempus pellentesque velit eget laoreet."
+    },
+    {
+      "title": "Vista_2",
+      "content": "Nullam in fermentum lacus. Vestibulum consequat, magna ac mattis mattis, urna tellus bibendum libero, id pretium ante purus eget magna."
+    },
+    {
+      "title": "Vista_3",
+      "content": "Cras sit amet eros porttitor, commodo urna scelerisque, suscipit arcu. Donec vestibulum ligula vel tortor maximus vulputate."
+    },
+    {
+      "title": "Vista_4",
+      "content": "Cras venenatis tincidunt erat, a dictum odio tristique eu."
+    },
+    {
+      "title": "Vista_5",
+      "content": "Nam eleifend ornare nisl id sollicitudin. In nec consectetur eros, sit amet sollicitudin diam. Nullam sodales urna id urna malesuada, et accumsan eros hendrerit. Proin sodales hendrerit metus, a ultrices ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac tortor placerat, sagittis diam sed, luctus nisl."
+    }
+  ],
+  "pokes": [
+    {
+      "title": "Poke_1",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis vel ligula porttitor sagittis. Integer laoreet cursus diam ac tempor. Duis ac dictum enim. Donec tempus pellentesque velit eget laoreet."
+    },
+    {
+      "title": "Poke_2",
+      "content": "Nullam in fermentum lacus. Vestibulum consequat, magna ac mattis mattis, urna tellus bibendum libero, id pretium ante purus eget magna."
+    },
+    {
+      "title": "Poke_3",
+      "content": "Cras sit amet eros porttitor, commodo urna scelerisque, suscipit arcu. Donec vestibulum ligula vel tortor maximus vulputate."
+    },
+    {
+      "title": "Poke_4",
+      "content": "Cras venenatis tincidunt erat, a dictum odio tristique eu."
+    },
+    {
+      "title": "Poke_5",
+      "content": "Nam eleifend ornare nisl id sollicitudin. In nec consectetur eros, sit amet sollicitudin diam. Nullam sodales urna id urna malesuada, et accumsan eros hendrerit. Proin sodales hendrerit metus, a ultrices ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac tortor placerat, sagittis diam sed, luctus nisl."
+    }
+  ],
+  "flamboyant": "Are you ready to <br /><em>hire</em> me?"
+}

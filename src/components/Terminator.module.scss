@@ -1,0 +1,87 @@
+/**
+ *
+ */
+.typewriter {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 0.5rem;
+}
+
+/**
+ *
+ */
+.typeline {
+  opacity: 0.9;
+  * {
+    font-size: 2rem;
+  }
+}
+
+/**
+ *
+ */
+.fold {
+}
+
+/**
+ *
+ */
+.terminal {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/**
+ *
+ */
+.typing {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/**
+ *
+ */
+.caret {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 1rem;
+  height: 2rem;
+  background-color: var(--mantine-color-lime-3);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**
+ *
+ */
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/

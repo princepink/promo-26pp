@@ -1,0 +1,12 @@
+/* SplitText.module.scss */
+.container {
+  padding: 2rem;
+  background-color: var(--mantine-color-gray-0);
+  .text {
+    font-weight: bold;
+    color: var(--mantine-color-blue-filled);
+    &:hover {
+      color: var(--mantine-color-orange-filled);
+    }
+  }
+}

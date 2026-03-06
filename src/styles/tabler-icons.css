@@ -1,0 +1,59 @@
+/* 回転 (icon-rotate) */
+.icon-rotate {
+  animation: tabler-rotate 2s linear infinite;
+}
+
+/* 鼓動 (icon-pulse) */
+.icon-pulse {
+  animation: tabler-pulse 1s ease-in-out infinite;
+}
+
+/* 揺れ (icon-tada) */
+.icon-tada {
+  animation: tabler-tada 1.5s ease-in-out infinite;
+}
+
+@keyframes tabler-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tabler-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes tabler-tada {
+  0% {
+    transform: scale(1);
+  }
+  10%,
+  20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
