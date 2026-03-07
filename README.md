@@ -25,9 +25,9 @@ A scaffold project for Promo SPA
 ## License & Copyright
 
 - **Source Code**: Licensed under the [MIT License](LICENSE).
-- **Graphic Assets**: All images and icons in this repository are **All Rights Reserved**, unless otherwise stated.
+- **Graphic Assets**: All images, icons, and graphic assets in this repository (regardless of file format, such as SVG, PNG, etc.) are **All Rights Reserved**, unless otherwise explicitly stated.
 
 > [!WARNING]
 >
-> - リポジトリ内のすべての画像、アイコン、およびグラフィック素材は、ライセンス（MIT）の対象外です。
-> - これら素材の無断転載・再配布・複製・二次利用は一切禁止します。
+> - リポジトリ内のすべての画像・アイコン素材は、形式を問わず著作権を留保しており、ライセンス（MIT）の対象外です。
+> - 個別にライセンス（CC等）が指定されている場合を除き、無断転載や利用を禁止します。
