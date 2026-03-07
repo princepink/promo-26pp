@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { Box } from '@mantine/core';
+import { Box, Container, Title } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
+import { Trans } from 'react-i18next';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import SvgLogo from '../components/SvgLogo';
 import { getSVGModulesInDir } from '../utils';
@@ -49,42 +50,42 @@ export default function ParadeSection() {
     return () => observer.disconnect();
   }, []);
 
+  /**
+   *  Mantine Carousel
+   *    slideSize - slideGap = view space for the slide
+   *  @prop styles  Styles API https://mantine.dev/x/carousel/?t=styles-api
+   */
   return (
-    <Box ref={containerRef} w="100%" miw={720} className={styles.container}>
-      <Carousel
-        className={styles.carousel}
-        withControls={false}
-        withIndicators={false}
-        slideSize="72px"
-        slideGap="md"
-        plugins={[autoScroll.current]}
-        emblaOptions={{
-          loop: true,
-          dragFree: true,
-          align: 'start',
-        }}
-        styles={{
-          viewport: {
-            overflow: 'visible',
-          },
-          // display: 'flex',
-        }}
-      >
-        {logoNames.map((name) => (
-          <Carousel.Slide key={name}>
-            <div style={{ padding: '10px', textAlign: 'center' }}>
-              <SvgLogo
-                name={name}
-                style={{
-                  width: '80px',
-                  height: 'auto',
-                  opacity: 0.7,
-                }}
-              />
-            </div>
-          </Carousel.Slide>
-        ))}
-      </Carousel>
+    <Box component="section" className={styles.parade}>
+      <Title order={2}>
+        <Trans i18nKey="parade.title" />
+      </Title>
+      <Container ref={containerRef} size="100%" className={styles.container}>
+        <Carousel
+          className={styles.carousel}
+          withControls={false}
+          withIndicators={false}
+          slideSize={128}
+          slideGap={64}
+          plugins={[autoScroll.current]}
+          emblaOptions={{
+            loop: true,
+            dragFree: true,
+            align: 'start',
+          }}
+          styles={{
+            viewport: {
+              overflow: 'visible',
+            },
+          }}
+        >
+          {logoNames.map((name) => (
+            <Carousel.Slide key={name}>
+              <SvgLogo name={name} />
+            </Carousel.Slide>
+          ))}
+        </Carousel>
+      </Container>
     </Box>
   );
 }

@@ -10,11 +10,11 @@ export default function Page() {
   return (
     <Box id="page-root" component="main">
       <HeroSection />
+      <ParadeSection />
       <PokerSection />
       <FlamboyantSection />
       <ZoomyDepthSection />
       <HorizonSection />
-      <ParadeSection />
     </Box>
   );
 }

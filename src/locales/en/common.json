@@ -12,12 +12,14 @@
     "stimulate": "Drill Deeper"
   },
   "profile": {
-    "name": "$t(author)",
-    "jobs": ["Hyper Designer", "Web Developer"]
+    "name": "$t(author)"
   },
   "jobs": {
     "domain": "Hyper Designer",
     "gain": "Web Developer"
+  },
+  "parade": {
+    "title": "Logo Works"
   },
   "vistas": [
     {

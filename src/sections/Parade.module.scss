@@ -1,6 +1,16 @@
 /**
  *
  */
+.parade {
+  svg {
+    width: 100%;
+    opacity: 0.7;
+  }
+}
+
+/**
+ *
+ */
 .container {
   // background-color: rgba(cyan, 0.5);
   // border: 2px white dashed;
@@ -28,7 +38,7 @@
 
 /**
  *
- */
+ *
 .slide {
   // background-color: rgba(purple, 0.3);
   // border: 1px blue solid;
@@ -52,7 +62,7 @@
 
 /**
  *
- */
+ *
 .container {
   position: relative;
   width: 100%;
