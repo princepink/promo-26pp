@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useTimeline } from '../contexts/TimelineContext';
 import { Box, Image } from '@mantine/core';
-import car from '../assets/future_vehicle2.png';
+import car from '../assets/cyber_limo.png';
 import styles from './Trailer.module.scss';
 
 export default function Trailer() {

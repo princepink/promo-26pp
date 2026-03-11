@@ -1,6 +1,6 @@
-# Promo Template Alpha
+# Promo 2026
 
-A scaffold project for Promo SPA
+Core values of Curriculum Vitae
 
 ## Built with
 
@@ -29,5 +29,5 @@ A scaffold project for Promo SPA
 
 > [!WARNING]
 >
-> - リポジトリ内のすべての画像・アイコン素材は、形式を問わず著作権を留保しており、ライセンス（MIT）の対象外です。
+> - リポジトリ内のすべての画像（ロゴやアイコン等を含む）は、形式を問わず著作権を留保しており、ライセンス（MIT）の対象外です。
 > - 個別にライセンス（CC等）が指定されている場合を除き、無断転載や利用を禁止します。

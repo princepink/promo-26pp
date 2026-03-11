@@ -42,20 +42,20 @@ export default function PokerSection() {
             left: i + 2 + 'rem',
             ease: 'slow',
             onUpdate() {
-              // this = 個別 tween なので progress() が正確に取れる
+              // this = independent `tween` -> available precise progress()
               const p = this.progress();
               let z: number;
               if (p < 0.3) {
-                z = cards.length - i; // 未到着：元の重なり順
+                z = cards.length - i;
               } else if (p <= 0.7) {
-                z = cards.length * 2; // 中央付近：最前面
+                z = cards.length * 2;
               } else {
-                z = 0; // 通過済み：最背面
+                z = 0;
               }
               gsap.set(card, { zIndex: z });
             },
           },
-          // stagger 相当のオフセット：前のカードと 0.3 ずらして追加
+          // alternative `stagger`
           i * 0.3,
         );
       });

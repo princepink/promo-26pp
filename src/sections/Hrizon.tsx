@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useViewportSize } from '@mantine/hooks';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useTimeline } from '../contexts/TimelineContext';
@@ -7,18 +8,22 @@ import { Box, Flex, Title, Text } from '@mantine/core';
 import styles from './Horizon.module.scss';
 
 export default function HorizonSection() {
+  const { width: vw } = useViewportSize();
   const { tl } = useTimeline();
   const triggerRef = useRef(null);
   const sectionRef = useRef(null);
   const { t } = useTranslation();
   // Pre-translate all Vistas - to loop the array of contents
-  const vistas = t('vistas', { returnObjects: true }) as Array<{
+  const subsections = t('vistas', { returnObjects: true }) as Array<{
     title: string;
     content: string;
   }>;
-  const count = vistas.length;
-  const tankw = count * 100 + 'vw';
-  const shift = (count - 1) * -100 + 'vw';
+  const count = subsections.length;
+  const subw = vw < 768 ? vw : 640;
+  const tankw = count * subw;
+  // const tankw = 'auto';
+  const shift = vw - tankw;
+  // const shift = sectionRef.current.offsetWidth;
 
   useGSAP(
     () => {
@@ -39,6 +44,7 @@ export default function HorizonSection() {
         { translateX: 0 },
         {
           translateX: shift,
+          // translateX: sectionRef.current.offsetWidth * -1,
           ease: 'none',
         },
       );
@@ -57,12 +63,12 @@ export default function HorizonSection() {
           className={styles.tanker}
           style={{ width: tankw }}
         >
-          {vistas.map((vista, index) => (
-            <Box key={index} className={styles.vista}>
+          {subsections.map((subsection, index) => (
+            <Box key={index} className={styles.subsection}>
               <Title c="white" order={2}>
-                {vista.title}
+                {subsection.title}
               </Title>
-              <Text size="xl">{vista.content}</Text>
+              <Text size="xl">{subsection.content}</Text>
             </Box>
           ))}
         </Flex>

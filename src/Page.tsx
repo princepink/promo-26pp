@@ -1,6 +1,6 @@
 import { Box } from '@mantine/core';
 import HeroSection from './sections/Hero';
-import ZoomyDepthSection from './sections/ZoomyDepth';
+// import ZoomyDepthSection from './sections/ZoomyDepth';
 import HorizonSection from './sections/Hrizon';
 import ParadeSection from './sections/Parade';
 import PokerSection from './sections/Poker';
@@ -10,11 +10,10 @@ export default function Page() {
   return (
     <Box id="page-root" component="main">
       <HeroSection />
-      <ParadeSection />
       <PokerSection />
-      <FlamboyantSection />
-      <ZoomyDepthSection />
       <HorizonSection />
+      <ParadeSection />
+      <FlamboyantSection />
     </Box>
   );
 }
