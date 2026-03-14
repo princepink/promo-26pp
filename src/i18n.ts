@@ -15,7 +15,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    // lng: 'en', // to set primal or depends on Detector
+    lng: 'en', // to set primal or depends on Detector
     fallbackLng: 'en',
     ns: ['common'], // list of namespaces
     defaultNS: 'common', // t() refers default

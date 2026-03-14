@@ -11,7 +11,93 @@
   "hero": {
     "stimulate": "Drill Deeper"
   },
-  "occupations": ["Hyper Designer", "Web Developer"],
+  "profile": {
+    "name": "$t(author)"
+  },
+  "jobs": {
+    "domain": "Hyper Designer",
+    "gain": "Web Developer"
+  },
+  "parade": {
+    "title": "Logo Works"
+  },
+  "careers": [
+    {
+      "title": "",
+      "fromY": 0,
+      "toY": 0,
+      "achievements": [],
+      "description": "",
+      "children": [
+        {
+          "title": "",
+          "fromY": 0,
+          "toY": 0,
+          "achievements": [],
+          "description": "",
+          "children": []
+        },
+        {
+          "title": "",
+          "fromY": 0,
+          "toY": 0,
+          "achievements": [],
+          "description": "",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "ファッション業界",
+      "fromY": 1992,
+      "toY": 1993,
+      "achievements": [
+        "Engaged in international trade business at Onward Kashiyama Co., Ltd.",
+        "In charge of the brand, Jean Paul Gaultier"
+      ],
+      "description": "I preferred to use the pure white, compact Macintosh Classic II, the only one in my department at the time, which was a clear departure from the spacious machines so-called “office computers”.",
+      "children": []
+    },
+    {
+      "title": "Other Concurrent Roles",
+      "fromY": 0,
+      "toY": 0,
+      "achievements": [],
+      "description": "",
+      "children": [
+        {
+          "title": "Editor in Chief",
+          "fromY": 2007,
+          "toY": 2008,
+          "description": "A member newspaper for an association with 6 million members"
+        },
+        {
+          "title": "Advisor, Mentor",
+          "fromY": 2012,
+          "toY": 2012,
+          "description": "A startup in its second year"
+        },
+        {
+          "title": "Senior Curator, CEO",
+          "fromY": 2013,
+          "toY": 2014,
+          "description": "A joint venture between a web consulting company and a major IT company"
+        },
+        {
+          "title": "Service Development, Mentor",
+          "fromY": 2019,
+          "toY": 2021,
+          "description": "A web marketing company"
+        },
+        {
+          "title": "",
+          "fromY": 0,
+          "toY": 0,
+          "description": ""
+        }
+      ]
+    }
+  ],
   "vistas": [
     {
       "title": "Vista_1",

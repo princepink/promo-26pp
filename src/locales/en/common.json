@@ -21,6 +21,126 @@
   "parade": {
     "title": "Logo Works"
   },
+  "labels": {
+    "period": "Period",
+    "description": "Description",
+    "organization": "company"
+  },
+  "careers": [
+    {
+      "title": "",
+      "fromY": 0,
+      "toY": 0,
+      "achievements": [],
+      "description": "",
+      "children": [
+        {
+          "title": "",
+          "fromY": 0,
+          "toY": 0,
+          "achievements": [],
+          "description": "",
+          "children": []
+        },
+        {
+          "title": "",
+          "fromY": 0,
+          "toY": 0,
+          "achievements": [],
+          "description": "",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "Fashion industry",
+      "tradeName": "Onward Kashiyama Co., Ltd.",
+      "fromY": 1992,
+      "toY": 1993,
+      "achievements": [
+        "Engaged in international trade business",
+        "In charge of the brand, Jean Paul Gaultier"
+      ],
+      "description": "I preferred to use the pure white, compact Macintosh Classic II, the only one in my department at the time, which was a clear departure from the spacious machines so-called “office computers”.",
+      "children": []
+    },
+    {
+      "title": "Printing business",
+      "tradeName": "Hobundo Inc.",
+      "fromY": 1993,
+      "toY": 2003,
+      "achievements": [
+        "Introduced a full system in the early days of DTP and improved gross profit margins",
+        "1995: Started my career as a designer",
+        "Realized what is now called SFA+CRM with FileMaker",
+        "1997: Appointed representative director"
+      ],
+      "description": "",
+      "children": []
+    },
+    {
+      "title": "Freelancer",
+      "fromY": 2004,
+      "toY": -1,
+      "achievements": [
+        "100+ various scales of web projects for clients",
+        "55% Public sector"
+      ],
+      "description": "",
+      "children": []
+    },
+    {
+      "title": "Web Consulting",
+      "tradeName": "Siemple Inc.",
+      "fromY": 2009,
+      "toY": 2011,
+      "achievements": [
+        "A bold one-sheet and impactful landing page I created helped the company in its early stage launch what would become their flagship service",
+        "While analyzing 300+ websites and tuning HTML for SEO, I also deepened my understanding of web accessibility and web semantics"
+      ],
+      "description": "",
+      "children": []
+    },
+    {
+      "title": "Other Concurrent Roles",
+      "fromY": 0,
+      "toY": 0,
+      "achievements": [],
+      "description": "",
+      "children": [
+        {
+          "title": "Editor in Chief",
+          "fromY": 2007,
+          "toY": 2008,
+          "description": "A member newspaper for an association with 6 million members"
+        },
+        {
+          "title": "Advisor, Mentor",
+          "fromY": 2012,
+          "toY": 2012,
+          "description": "A startup in its second year"
+        },
+        {
+          "title": "Senior Curator, CEO",
+          "fromY": 2013,
+          "toY": 2014,
+          "description": "A joint venture between a web consulting company and a major IT company"
+        },
+        {
+          "title": "Service Development, Mentor",
+          "fromY": 2019,
+          "toY": 2021,
+          "description": "A web marketing company"
+        },
+        {
+          "title": "",
+          "fromY": 0,
+          "toY": 0,
+          "description": ""
+        }
+      ]
+    }
+  ],
   "vistas": [
     {
       "title": "Vista_1",

@@ -1,0 +1,21 @@
+/**
+ *
+ */
+.content {
+  width: 100vw;
+  &:nth-child(3n + 1) {
+    background-color: var(--mantine-color-dark-6);
+  }
+  &:nth-child(3n + 2) {
+    background-color: var(--mantine-color-dark-7);
+  }
+  &:nth-child(3n) {
+    background-color: var(--mantine-color-dark-5);
+  }
+  // &:nth-child(5n + 4) {
+  //   background-color: darkorange;
+  // }
+  // &:nth-child(5n + 5) {
+  //   background-color: darkorange;
+  // }
+}
