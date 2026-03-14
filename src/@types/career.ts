@@ -5,6 +5,7 @@ interface Career {
   key?: string;
   fromY?: number;
   toY?: number;
+  sphere?: string;
   tradeName?: string;
   achievements?: string[];
   description?: string;
@@ -17,6 +18,7 @@ export const CareerSchema: z.ZodType<Career> = z.lazy(() =>
     key: z.string().optional(),
     fromY: z.number().optional(),
     toY: z.number().optional(),
+    sphere: z.string().optional(),
     tradeName: z.string().optional(),
     achievements: z.array(z.string()).optional(),
     description: z.string().optional(),

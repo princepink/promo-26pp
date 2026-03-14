@@ -14,10 +14,11 @@ export default function HorizonSection() {
   const triggerRef = useRef(null);
   const sectionRef = useRef(null);
   const careers = useCareers();
-  const count = careers.length;
+  const count = careers.filter((career) => career.title).length;
   const subw = vw < 768 ? vw : 640;
   const tankw = count * subw;
   const shift = vw - tankw;
+  const currentFromY = careers.find((career) => career.toY === -1)?.fromY;
 
   useGSAP(
     () => {
@@ -57,7 +58,11 @@ export default function HorizonSection() {
           style={{ width: tankw }}
         >
           {careers.map((career, index) => (
-            <RecursiveCareer key={index} career={career} />
+            <RecursiveCareer
+              key={index}
+              career={career}
+              currentFromY={currentFromY}
+            />
           ))}
         </Flex>
       </div>

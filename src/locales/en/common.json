@@ -54,6 +54,7 @@
     },
     {
       "title": "Fashion industry",
+      "sphere": "Fashion industry",
       "tradeName": "Onward Kashiyama Co., Ltd.",
       "fromY": 1992,
       "toY": 1993,
@@ -66,6 +67,7 @@
     },
     {
       "title": "Printing business",
+      "sphere": "Printing business",
       "tradeName": "Hobundo Inc.",
       "fromY": 1993,
       "toY": 2003,
@@ -80,6 +82,7 @@
     },
     {
       "title": "Freelancer",
+      "sphere": "Freelancer",
       "fromY": 2004,
       "toY": -1,
       "achievements": [
@@ -91,6 +94,7 @@
     },
     {
       "title": "Web Consulting",
+      "sphere": "Web Consulting",
       "tradeName": "Siemple Inc.",
       "fromY": 2009,
       "toY": 2011,
@@ -103,6 +107,7 @@
     },
     {
       "title": "Other Concurrent Roles",
+      "sphere": "Other Concurrent Roles",
       "fromY": 0,
       "toY": 0,
       "achievements": [],
