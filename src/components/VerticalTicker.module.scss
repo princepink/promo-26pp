@@ -1,12 +1,28 @@
+@use '../styles/mixins' as *;
+
 /**
  *
  */
 .root {
   overflow: hidden;
-  height: 2rem;
+  height: 3rem;
   position: relative;
   width: 100%;
   // margin-top: 2rem;
+}
+
+/**
+ *
+ */
+.badge {
+  @include glassplate();
+  color: rgba(white, 0.78);
+  .alpha & {
+    background: linear-gradient(60deg, rgba(black, 0.15), rgba(magenta, 0.3));
+  }
+  .beta & {
+    background: linear-gradient(60deg, rgba(black, 0.15), rgba(cyan, 0.3));
+  }
 }
 
 /**

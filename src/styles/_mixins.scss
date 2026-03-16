@@ -1,0 +1,23 @@
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+@mixin glassplate() {
+  backdrop-filter: blur(3px);
+  border: rgba(white, 0.15) 1px solid;
+  color: rgba(white, 0.6);
+  background: linear-gradient(60deg, rgba(black, 0.15), rgba(white, 0.15));
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */

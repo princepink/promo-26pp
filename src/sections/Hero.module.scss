@@ -1,3 +1,11 @@
+/**
+ *
+ */
+@use '../styles/mixins' as *;
+
+/**
+ *
+ */
 .box {
   height: 100vh;
   flex-direction: column;
@@ -5,21 +13,59 @@
   gap: 3rem;
 }
 
+/**
+ *
+ */
 .title {
   font-size: 3.5rem;
   flex-grow: 1;
   align-content: end;
 }
 
+/**
+ *
+ */
 .message {
-  height: 5vh;
+  height: 10vh;
+  :global(.mantine-Badge-root) {
+    text-transform: none;
+    @include glassplate();
+  }
+  .circle {
+    display: inline-flex;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    backdrop-filter: hue-rotate(30deg);
+    background: linear-gradient(
+      30deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 50%,
+      rgba(white, 0.15) 75%
+    );
+    box-shadow: inset 0px -1px 3px 0px rgba(white, 0.75);
+  }
   // margin-top: 20vh;
   // justify-self: flex-end;
   svg {
-    padding-right: 0.25em;
+    // padding-right: 0.25em;
+    align-self: center;
   }
 }
 
+/**
+ *
+ */
+.badgeLabel {
+  display: inline-flex;
+  align-items: center;
+}
+
+/**
+ *
+ */
 .ticker {
   // flex-basis: auto;
   flex-grow: 1;

@@ -1,4 +1,4 @@
-import { Box, Container, Center, Title, Text } from '@mantine/core';
+import { Box, Container, Center, Title, Text, Badge } from '@mantine/core';
 import { IconArrowBigDownLines } from '@tabler/icons-react';
 import { Trans } from 'react-i18next';
 import Ambience from '../layouts/Ambience';
@@ -11,10 +11,12 @@ export default function HeroSection() {
     {
       key: 'jobs.domain',
       col: 'mediumvioletred',
+      class: 'alpha',
     },
     {
       key: 'jobs.gain',
       col: 'teal',
+      class: 'beta',
     },
   ];
 
@@ -30,10 +32,12 @@ export default function HeroSection() {
             <VerticalTicker ticks={tickers} />
           </Box>
           <Box className={styles.message}>
-            <Text size="lg">
-              <IconArrowBigDownLines className="icon-pulse" />
+            <Badge size="xl" p="xl" classNames={{ label: styles.badgeLabel }}>
+              <span className={styles.circle}>
+                <IconArrowBigDownLines className="icon-pulse" size={24} />
+              </span>
               <Trans i18nKey="hero.stimulate" />
-            </Text>
+            </Badge>
           </Box>
         </Center>
       </Container>

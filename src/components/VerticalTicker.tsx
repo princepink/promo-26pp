@@ -8,6 +8,7 @@ import styles from './VerticalTicker.module.scss';
 export interface Palette {
   key: ParseKeys;
   col: string;
+  class: string;
 }
 
 interface VerticalTickerProps {
@@ -29,7 +30,7 @@ export default function VerticalTicker({ ticks }: VerticalTickerProps) {
       <AnimatePresence initial={false}>
         <motion.div
           key={ticks[index].key}
-          className={`${styles[ticks[index].key]} ${styles.tick}`}
+          className={`${styles[ticks[index].class]} ${styles.tick}`}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -20, opacity: 0 }}
@@ -38,8 +39,9 @@ export default function VerticalTicker({ ticks }: VerticalTickerProps) {
           <Badge
             className={styles.badge}
             size="xl"
-            radius="sm"
-            bg={ticks[index].col}
+            radius="xl"
+            p="lg"
+            data-bg={ticks[index].col}
           >
             <Trans i18nKey={ticks[index].key} />
           </Badge>

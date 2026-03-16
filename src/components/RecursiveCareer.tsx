@@ -1,6 +1,7 @@
 import { useViewportSize } from '@mantine/hooks';
 import {
   Box,
+  Paper,
   Title,
   TitleOrder,
   Text,
@@ -49,7 +50,7 @@ export const RecursiveCareer = ({
   depth++;
 
   return (
-    <Box
+    <Paper
       className={clsx(styles.content, isChild && styles.child)}
       component="section"
       w={cw}
@@ -115,6 +116,6 @@ export const RecursiveCareer = ({
         career.children.map((child, i) => (
           <RecursiveCareer key={i} career={child} depth={depth} />
         ))}
-    </Box>
+    </Paper>
   );
 };
