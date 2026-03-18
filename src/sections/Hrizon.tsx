@@ -4,8 +4,10 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useTimeline } from '../contexts/TimelineContext';
 import { useCareers } from '../hooks/useCareers';
-import { Box, Flex } from '@mantine/core';
+import { Trans } from 'react-i18next';
+import { Box, Center, Flex } from '@mantine/core';
 import { RecursiveCareer } from '../components/RecursiveCareer';
+import FairTitle from '../components/FairTitle';
 import styles from './Horizon.module.scss';
 
 export default function HorizonSection() {
@@ -51,6 +53,11 @@ export default function HorizonSection() {
 
   return (
     <Box id="horizon" component="section" ref={triggerRef}>
+      <Center>
+        <FairTitle scopeRef={triggerRef}>
+          <Trans i18nKey="titles.career" />
+        </FairTitle>
+      </Center>
       <div className={styles.liner}>
         <Flex
           ref={sectionRef}

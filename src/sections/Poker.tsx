@@ -3,9 +3,11 @@ import { useGSAP } from '@gsap/react';
 import { useTimeline } from '../contexts/TimelineContext';
 import { useTranslation } from 'react-i18next';
 import { Box } from '@mantine/core';
+import { Trans } from 'react-i18next';
 import SkillCard, { SkillData } from '../components/SkillCard';
 import gsap from 'gsap';
 import styles from './Poker.module.scss';
+import FairTitle from '../components/FairTitle';
 
 export default function PokerSection() {
   const { tl } = useTimeline();
@@ -63,6 +65,9 @@ export default function PokerSection() {
 
   return (
     <Box ref={triggerRef} component="section" className={styles.container}>
+      <FairTitle scopeRef={triggerRef}>
+        <Trans i18nKey="titles.skill" />
+      </FairTitle>
       {skills.map((skill) => (
         <SkillCard key={skill.id} classViaCaller={styles.card} skill={skill} />
       ))}

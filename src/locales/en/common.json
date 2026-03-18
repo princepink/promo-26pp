@@ -21,6 +21,11 @@
   "parade": {
     "title": "Logo Works"
   },
+  "titles": {
+    "work": "Logo Works",
+    "skill": "Some cards in my hands",
+    "career": "Instant Career History"
+  },
   "labels": {
     "period": "Period",
     "description": "Description",

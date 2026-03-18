@@ -4,7 +4,7 @@ import { Card, List, Title, Text } from '@mantine/core';
 type SkillItem = string | SkillData;
 
 type SkillData = {
-  id: string;
+  id?: string;
   title: string;
   items: SkillItem[];
 };
@@ -19,7 +19,7 @@ interface CardProps {
   classViaCaller: string;
 }
 
-const SkillContent = ({ skill, level = 3 }: SkillProps) => {
+function SkillContent({ skill, level = 3 }: SkillProps) {
   const titleOrder = Math.min(level, 6) as 1 | 2 | 3 | 4 | 5 | 6;
 
   return (
@@ -39,7 +39,7 @@ const SkillContent = ({ skill, level = 3 }: SkillProps) => {
       </List>
     </>
   );
-};
+}
 
 const SkillCard = ({ skill, classViaCaller }: CardProps) => (
   <Card id={`skill-${skill.id}`} className={classViaCaller} withBorder>

@@ -1,11 +1,12 @@
 import { useEffect, useRef } from 'react';
-import { Box, Container, Title } from '@mantine/core';
+import { Box, Container } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { Trans } from 'react-i18next';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import SvgLogo from '../components/SvgLogo';
 import { getSVGModulesInDir } from '../utils';
 import { logoWorksDir } from '../../pearlpuppy-config';
+import FairTitle from '../components/FairTitle';
 import styles from './Parade.module.scss';
 
 const logoModules = getSVGModulesInDir(logoWorksDir(0));
@@ -16,6 +17,7 @@ const logoNames = Object.keys(logoModules).map((path) => {
 
 export default function ParadeSection() {
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const rootRef = useRef<HTMLElement>(null);
 
   // continuous auto scroll plugin
   const autoScroll = useRef(
@@ -56,10 +58,10 @@ export default function ParadeSection() {
    *  @prop styles  Styles API https://mantine.dev/x/carousel/?t=styles-api
    */
   return (
-    <Box component="section" className={styles.parade}>
-      <Title order={2}>
-        <Trans i18nKey="parade.title" />
-      </Title>
+    <Box component="section" className={styles.parade} ref={rootRef}>
+      <FairTitle scopeRef={rootRef}>
+        <Trans i18nKey="titles.work" />
+      </FairTitle>
       <Container ref={containerRef} size="100%" className={styles.container}>
         <Carousel
           className={styles.carousel}
