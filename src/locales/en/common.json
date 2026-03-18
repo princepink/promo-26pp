@@ -148,6 +148,7 @@
   ],
   "skills": [
     {
+      "id": "dd",
       "title": "Design & Dev",
       "items": [
         "Graphic Design",
@@ -161,6 +162,7 @@
       ]
     },
     {
+      "id": "web",
       "title": "Web Accessibility & Semantics",
       "items": [
         "Through my experience analyzing and tuning HTML for SEO, I deepened my understanding of web semantics.",
@@ -168,6 +170,7 @@
       ]
     },
     {
+      "id": "bus",
       "title": "Business Acceleration",
       "items": [
         {
@@ -183,6 +186,7 @@
       ]
     },
     {
+      "id": "spec",
       "title": "Spec",
       "items": [
         "Japanese: Native",

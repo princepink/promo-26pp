@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { useTimeline } from '../contexts/TimelineContext';
 import { useTranslation } from 'react-i18next';
-import { Box, Card } from '@mantine/core';
-import { SkillContent, SkillData } from '../components/SkillContent';
+import { Box } from '@mantine/core';
+import SkillCard, { SkillData } from '../components/SkillCard';
 import gsap from 'gsap';
 import styles from './Poker.module.scss';
 
@@ -63,10 +63,8 @@ export default function PokerSection() {
 
   return (
     <Box ref={triggerRef} component="section" className={styles.container}>
-      {skills.map((skill, i) => (
-        <Card key={i} className={styles.card} withBorder>
-          <SkillContent skill={skill} />
-        </Card>
+      {skills.map((skill) => (
+        <SkillCard key={skill.id} classViaCaller={styles.card} skill={skill} />
       ))}
     </Box>
   );
