@@ -1,6 +1,5 @@
 import { useViewportSize } from '@mantine/hooks';
 import {
-  Box,
   Paper,
   Title,
   TitleOrder,

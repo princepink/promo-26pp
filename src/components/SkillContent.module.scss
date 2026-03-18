@@ -1,0 +1,42 @@
+/**
+ *
+ */
+.card {
+  position: absolute;
+  right: 2rem;
+  width: 270px;
+  height: 432px;
+  color: white;
+  opacity: 0.87;
+  background-color: rgba(#333, 0.6);
+  backdrop-filter: blur(6px);
+  @for $i from 1 through 5 {
+    $b: 5 - $i;
+    &:nth-child(5n + #{$i}) {
+      bottom: calc(1rem * $i);
+      z-index: $b;
+    }
+  }
+}
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */

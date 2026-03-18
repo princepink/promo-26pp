@@ -2,8 +2,7 @@ import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { useTimeline } from '../contexts/TimelineContext';
 import { useTranslation } from 'react-i18next';
-import { Box, Card } from '@mantine/core';
-import { SkillContent, SkillData } from '../components/SkillContent';
+import { Box, Card, Title, Text } from '@mantine/core';
 import gsap from 'gsap';
 import styles from './Poker.module.scss';
 
@@ -11,7 +10,10 @@ export default function PokerSection() {
   const { tl } = useTimeline();
   const triggerRef = useRef<HTMLElement | null>(null);
   const { t } = useTranslation();
-  const skills = t('skills', { returnObjects: true }) as Array<SkillData>;
+  const pokes = t('pokes', { returnObjects: true }) as Array<{
+    title: string;
+    content: string;
+  }>;
 
   useGSAP(
     () => {
@@ -63,9 +65,10 @@ export default function PokerSection() {
 
   return (
     <Box ref={triggerRef} component="section" className={styles.container}>
-      {skills.map((skill, i) => (
-        <Card key={i} className={styles.card} withBorder>
-          <SkillContent skill={skill} />
+      {pokes.map((poke, index) => (
+        <Card key={index} className={styles.card} withBorder>
+          <Title order={2}>{poke.title}</Title>
+          <Text>{poke.content}</Text>
         </Card>
       ))}
     </Box>

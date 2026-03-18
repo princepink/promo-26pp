@@ -146,6 +146,52 @@
       ]
     }
   ],
+  "skills": [
+    {
+      "title": "Design & Dev",
+      "items": [
+        "Graphic Design",
+        "Logo Design",
+        "UI/UX Design",
+        "CI/BI/VI",
+        "HTML",
+        "CSS, Sass",
+        "TypeScript, JavaScript",
+        "PHP"
+      ]
+    },
+    {
+      "title": "Web Accessibility & Semantics",
+      "items": [
+        "Through my experience analyzing and tuning HTML for SEO, I deepened my understanding of web semantics.",
+        "Having participated in numerous public sector projects, I have developed a strong sense of accessibility."
+      ]
+    },
+    {
+      "title": "Business Acceleration",
+      "items": [
+        {
+          "title": "Having experiences of",
+          "items": [
+            "Management",
+            "Participated in Startups",
+            "Built businesses and services"
+          ]
+        },
+        "Understanding the perspectives of customers and management",
+        "Driving the resolution of challenges"
+      ]
+    },
+    {
+      "title": "Spec",
+      "items": [
+        "Japanese: Native",
+        "English: B2 (Upper Intermediate) – Capable of working in professional environments",
+        "BA, Tokyo University of Foreign Studies 1992",
+        "IQ 130"
+      ]
+    }
+  ],
   "vistas": [
     {
       "title": "Vista_1",

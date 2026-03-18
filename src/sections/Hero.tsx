@@ -1,4 +1,4 @@
-import { Box, Container, Center, Title, Text, Badge } from '@mantine/core';
+import { Box, Container, Center, Title, Badge } from '@mantine/core';
 import { IconArrowBigDownLines } from '@tabler/icons-react';
 import { Trans } from 'react-i18next';
 import Ambience from '../layouts/Ambience';
