@@ -13,7 +13,7 @@
  */
 const LOGO_WORKS_PATH = '/src/assets/works/logos/';
 const DUMMY_LOGOS_PATH = '/src/assets/dummy-svgs/';
-const TEST_MODE = true;
+const TEST_MODE = false;
 
 /**
  *  Provides the logo works directory
