@@ -5,7 +5,7 @@
     "title": "$t(author) - A Hyper Designer"
   },
   "meta": {
-    "title": "CV",
+    "title": "The CV of $t(author)",
     "description": "$t(description)"
   },
   "hero": {
@@ -201,6 +201,143 @@
       ]
     }
   ],
+  "endroll": {
+    "cast": [
+      {
+        "role": "Starring",
+        "name": "React"
+      },
+      {
+        "role": "Supporting Actor",
+        "name": "Vite"
+      },
+      {
+        "role": "Head Waiter",
+        "name": "Mantine"
+      },
+      {
+        "role": "The Last Honcho",
+        "name": "GreenSock Animation Platform"
+      },
+      {
+        "role": "Unsung Hero",
+        "name": "TypeScript"
+      }
+    ],
+    "crew": [
+      {
+        "role": "Set Builder",
+        "name": "Hyper Text Markup Language"
+      },
+      {
+        "role": "Property Master",
+        "name": "JavaScript"
+      },
+      {
+        "role": "Script Supervisor",
+        "name": "Node.js"
+      },
+      {
+        "role": "Makeup Assistant",
+        "name": "Sassy Cascading Style Sheets"
+      },
+      {
+        "role": "Best Boy Rigging Grip",
+        "name": ""
+      },
+      {
+        "role": "Best Boy Electric",
+        "name": ""
+      },
+      {
+        "role": "Best Boy Grip",
+        "name": ""
+      },
+      {
+        "role": "Clapper Boy",
+        "name": ""
+      },
+      {
+        "role": "Boom Operator",
+        "name": ""
+      },
+      {
+        "role": "Subtitle",
+        "name": "I18next"
+      },
+      {
+        "role": "Location Scout",
+        "name": "Cloudflare"
+      },
+      {
+        "role": "Focus Puller",
+        "name": "Figma"
+      },
+      {
+        "role": "Best Boy",
+        "name": ""
+      },
+      {
+        "role": "Key Rigging Grip",
+        "name": ""
+      },
+      {
+        "role": "Gaffer",
+        "name": "Scalable Vector Graphics"
+      },
+      {
+        "role": "Key Grip",
+        "name": "Apple iPhone"
+      },
+      {
+        "role": "Makeup Artist",
+        "name": "Syntactically Awesome Style Sheets"
+      },
+      {
+        "role": "Costume Designer",
+        "name": "Cascading Style Sheets"
+      },
+      {
+        "role": "Stunt Coordinator",
+        "name": "GitHub"
+      },
+      {
+        "role": "Casting",
+        "name": "$t(author)"
+      },
+      {
+        "role": "Production Coordinator",
+        "name": "macOS"
+      },
+      {
+        "role": "Cinematographer",
+        "name": "Adobe Photoshop"
+      },
+      {
+        "role": "Production Designer",
+        "name": "Adobe Illustrator"
+      },
+      {
+        "role": "Art Director",
+        "name": "$t(author)"
+      }
+    ],
+    "soleCredit": [
+      {
+        "role": "Executive Producer",
+        "name": "$t(author)"
+      },
+      {
+        "role": "Written by",
+        "name": "$t(author)"
+      },
+      {
+        "role": "Directed by",
+        "name": "$t(author)"
+      }
+    ],
+    "thanks": "Special Thanks"
+  },
   "vistas": [
     {
       "title": "Vista_1",

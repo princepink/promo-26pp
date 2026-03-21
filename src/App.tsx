@@ -10,16 +10,13 @@ import devicon from './assets/devicon.svg';
 
 export default function App() {
   const { t } = useTranslation();
-  const author = t('author');
+  const appTitle = t('meta.title');
   const favicon = import.meta.env.PROD ? '/favicon.svg' : devicon;
 
   return (
     <MantineProvider defaultColorScheme="dark">
-      <title>{author}</title>
-      <meta
-        name="description"
-        content={t('meta.description', { name: author })}
-      />
+      <title>{appTitle}</title>
+      <meta name="description" content={t('meta.description')} />
       <link rel="icon" type="image/svg+xml" href={favicon} sizes="any" />
       <ReactLenis root options={{ lerp: 0.2, duration: 1.5 }}>
         <TimelineProvider>

@@ -5,11 +5,13 @@ import HorizonSection from './sections/Hrizon';
 import ParadeSection from './sections/Parade';
 import PokerSection from './sections/Poker';
 import FlamboyantSection from './sections/Flamboyant';
+import OutroSection from './sections/Outro';
 
 export default function Page() {
   return (
     <Box id="page-root" component="main">
       <HeroSection />
+      <OutroSection />
       <PokerSection />
       <HorizonSection />
       <ParadeSection />
