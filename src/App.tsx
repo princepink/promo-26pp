@@ -5,6 +5,7 @@ import { ReactLenis } from 'lenis/react';
 import { TimelineProvider } from './contexts/TimelineContext';
 import Waves from './components/ReactBits/Waves'; // depends on GSAP
 import Page from './Page';
+import { theme } from './theme';
 import { useTranslation } from 'react-i18next';
 import devicon from './assets/devicon.svg';
 
@@ -14,14 +15,14 @@ export default function App() {
   const favicon = import.meta.env.PROD ? '/favicon.svg' : devicon;
 
   return (
-    <MantineProvider defaultColorScheme="dark">
+    <MantineProvider defaultColorScheme="dark" theme={theme}>
       <title>{appTitle}</title>
       <meta name="description" content={t('meta.description')} />
       <link rel="icon" type="image/svg+xml" href={favicon} sizes="any" />
       <ReactLenis root options={{ lerp: 0.2, duration: 1.5 }}>
         <TimelineProvider>
           <Box id="app-root">
-            <Box id="bg-wave">
+            {/* <Box id="bg-wave">
               <Waves
                 lineColor="cyan"
                 backgroundColor="transparent"
@@ -33,7 +34,7 @@ export default function App() {
                 tension={0.01}
                 maxCursorMove={120}
               />
-            </Box>
+            </Box> */}
             <Page />
           </Box>
         </TimelineProvider>

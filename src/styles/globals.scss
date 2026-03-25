@@ -201,6 +201,24 @@ body {
 /**
  *
  */
+#outro {
+  background: rgba(white, 0.05);
+}
+
+/**
+ *
+ */
+#booty {
+  height: 12rem;
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
 
 /**
  * -----------------------------
@@ -213,6 +231,19 @@ body {
  */
 svg.tabler-icon {
   vertical-align: middle;
+}
+
+/**
+ * -----------------------------
+ *    Universal
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+.default-ff {
+  font-family: var(--mantine-font-family);
 }
 
 /**
@@ -245,13 +276,18 @@ svg {
 
 /**
  * -----------------------------
- *    
+ *    Responsives
  * -----------------------------
  */
 
 /**
  *
  */
+@media (min-width: variables.$mantine-breakpoint-lg) {
+  #outro {
+    font-size: 150%;
+  }
+}
 
 /**
  *

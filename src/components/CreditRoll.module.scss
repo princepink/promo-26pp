@@ -1,0 +1,161 @@
+@use '../styles/variables';
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+@mixin century($with-height: false) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  @if ($with-height) {
+    height: var(--creditroll-height);
+  }
+}
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+.roller {
+  > header,
+  > footer {
+    @include century(true);
+  }
+  > section {
+  }
+  dl > div {
+    @include century;
+  }
+  dl,
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+  // dt {
+  //   margin: 2rem 0 1rem;
+  //   padding: 0;
+  // }
+  // dd {
+  //   margin: 1rem 0;
+  //   padding: 0;
+  // }
+  h3 {
+    text-align: center;
+    font-family: var(--mantine-font-family);
+  }
+  dd,
+  .sole p {
+    font-family: var(--mantine-font-family-headings);
+  }
+  dd {
+    font-size: 125%;
+  }
+  .cast,
+  .sole {
+    font-size: 150%;
+  }
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+.as {
+  dt {
+    order: 2;
+    &::before {
+      content: 'as ';
+    }
+  }
+}
+
+/**
+ *
+ */
+.is {
+  font-style: inherit;
+}
+
+/**
+ *
+ */
+.cast {
+  dl > div {
+    height: var(--creditroll-height);
+  }
+}
+
+/**
+ *
+ */
+.sole {
+  > div {
+    @include century(true);
+    h3,
+    p {
+      margin: 0;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/**
+ * -----------------------------
+ *    
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+@media (min-width: variables.$mantine-breakpoint-lg) {
+  .roller {
+    > section {
+      > dl {
+        > div {
+          flex-direction: row;
+        }
+      }
+      &.crew {
+        > dl > div {
+          dt {
+            width: 35%;
+            text-align: right;
+          }
+          dd {
+            width: 65%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */

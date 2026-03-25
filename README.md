@@ -22,6 +22,10 @@ Core values of Curriculum Vitae
 - ESLint
 - Prettier
 
+## Tech & Hack
+
+### Keep Semantic, Show Freely
+
 ## License & Copyright
 
 - **Source Code**: Licensed under the [MIT License](LICENSE).

@@ -11,11 +11,14 @@ export default function Page() {
   return (
     <Box id="page-root" component="main">
       <HeroSection />
-      <OutroSection />
       <PokerSection />
       <HorizonSection />
       <ParadeSection />
       <FlamboyantSection />
+      <OutroSection />
+      <footer id="booty">
+        <h2>App Footer</h2>
+      </footer>
     </Box>
   );
 }

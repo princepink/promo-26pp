@@ -1,5 +1,8 @@
-import { createTheme } from "@mantine/core";
+import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  fontFamily: '"Outfit", sans-serif',
+  headings: {
+    fontFamily: '"Lily Script One", cursive',
+  },
 });

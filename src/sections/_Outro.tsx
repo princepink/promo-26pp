@@ -9,24 +9,23 @@ import styles from './Outro.module.scss';
 export default function OutroSection() {
   const { tl } = useTimeline();
   const rollRef = useRef<HTMLElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  // const ch = 'var(--creditroll-height)';
+  const containerRef = useRef(null);
+  const ch = 'var(--creditroll-height)';
+  // const ch = 720;
 
   useGSAP(
     () => {
+      // if (!tl) return;
       const el = rollRef.current;
-      const container = containerRef.current;
-      if (!tl || !el || !container) return;
+      if (!tl || !el) return;
 
       const eh = el.offsetHeight;
-      const chNum = container.offsetHeight;
 
       const localTl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: '50% 70%',
+          start: 'center 70%',
           end: 'top bottom',
-          markers: false,
         },
         repeat: -1,
       });
@@ -34,8 +33,9 @@ export default function OutroSection() {
       localTl
         .set(el, { y: 0, opacity: 1 }) // initial reset
         .to(el, {
-          y: chNum - eh, // distance to move up (container height - content height)
-          duration: 45, // rolling speed
+          // y: ch - eh,
+          y: `calc(${ch} - ${eh}px)`, // distance to move up (container height - content height)
+          duration: 15, // rolling speed
           ease: 'none',
           delay: 1, // pose befor starting
         })
@@ -43,14 +43,14 @@ export default function OutroSection() {
           el,
           {
             opacity: 0,
-            duration: 10, // fade out
+            duration: 1, // fade out
           },
           '+=0.5', // pose before next
         )
         .set(el, { y: 0 }) // rewind to start point
         .to(el, {
           opacity: 1,
-          duration: 5, // fade in
+          duration: 1, // fade in
         });
     },
     {
@@ -65,6 +65,7 @@ export default function OutroSection() {
       className={styles.container}
       component="section"
       ref={containerRef}
+      h={ch}
     >
       <CreditRoll ref={rollRef} />
     </Container>

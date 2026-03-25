@@ -24,12 +24,15 @@
   "titles": {
     "work": "Logo Works",
     "skill": "Some cards in my hands",
-    "career": "Instant Career History"
+    "career": "Instant Career History",
+    "thanks": "Special Thanks"
   },
   "labels": {
     "period": "Period",
     "description": "Description",
-    "organization": "company"
+    "organization": "company",
+    "cast": "Cast",
+    "crew": "Crew"
   },
   "careers": [
     {
@@ -202,141 +205,161 @@
     }
   ],
   "endroll": {
-    "cast": [
-      {
-        "role": "Starring",
-        "name": "React"
-      },
-      {
-        "role": "Supporting Actor",
-        "name": "Vite"
-      },
-      {
-        "role": "Head Waiter",
-        "name": "Mantine"
-      },
-      {
-        "role": "The Last Honcho",
-        "name": "GreenSock Animation Platform"
-      },
-      {
-        "role": "Unsung Hero",
-        "name": "TypeScript"
-      }
-    ],
-    "crew": [
-      {
-        "role": "Set Builder",
-        "name": "Hyper Text Markup Language"
-      },
-      {
-        "role": "Property Master",
-        "name": "JavaScript"
-      },
-      {
-        "role": "Script Supervisor",
-        "name": "Node.js"
-      },
-      {
-        "role": "Makeup Assistant",
-        "name": "Sassy Cascading Style Sheets"
-      },
-      {
-        "role": "Best Boy Rigging Grip",
-        "name": ""
-      },
-      {
-        "role": "Best Boy Electric",
-        "name": ""
-      },
-      {
-        "role": "Best Boy Grip",
-        "name": ""
-      },
-      {
-        "role": "Clapper Boy",
-        "name": ""
-      },
-      {
-        "role": "Boom Operator",
-        "name": ""
-      },
-      {
-        "role": "Subtitle",
-        "name": "I18next"
-      },
-      {
-        "role": "Location Scout",
-        "name": "Cloudflare"
-      },
-      {
-        "role": "Focus Puller",
-        "name": "Figma"
-      },
-      {
-        "role": "Best Boy",
-        "name": ""
-      },
-      {
-        "role": "Key Rigging Grip",
-        "name": ""
-      },
-      {
-        "role": "Gaffer",
-        "name": "Scalable Vector Graphics"
-      },
-      {
-        "role": "Key Grip",
-        "name": "Apple iPhone"
-      },
-      {
-        "role": "Makeup Artist",
-        "name": "Syntactically Awesome Style Sheets"
-      },
-      {
-        "role": "Costume Designer",
-        "name": "Cascading Style Sheets"
-      },
-      {
-        "role": "Stunt Coordinator",
-        "name": "GitHub"
-      },
-      {
-        "role": "Casting",
-        "name": "$t(author)"
-      },
-      {
-        "role": "Production Coordinator",
-        "name": "macOS"
-      },
-      {
-        "role": "Cinematographer",
-        "name": "Adobe Photoshop"
-      },
-      {
-        "role": "Production Designer",
-        "name": "Adobe Illustrator"
-      },
-      {
-        "role": "Art Director",
-        "name": "$t(author)"
-      }
-    ],
-    "soleCredit": [
-      {
-        "role": "Executive Producer",
-        "name": "$t(author)"
-      },
-      {
-        "role": "Written by",
-        "name": "$t(author)"
-      },
-      {
-        "role": "Directed by",
-        "name": "$t(author)"
-      }
-    ],
-    "thanks": "Special Thanks"
+    "cast": {
+      "label": "Cast",
+      "data": [
+        {
+          "role": "Starring",
+          "name": "React"
+        },
+        {
+          "role": "Supporting Actor",
+          "name": "Vite"
+        },
+        {
+          "role": "<i>the Chauffeur</i>",
+          "name": "Mantine"
+        },
+        {
+          "role": "<i>the Guard</i>",
+          "name": "TypeScript"
+        },
+        {
+          "role": "<i>the Last Honcho</i>",
+          "name": "GreenSock Animation Platform"
+        },
+        {
+          "role": "<i>the Unsung Hero</i>",
+          "name": "Web Semantics"
+        }
+      ]
+    },
+    "crew": {
+      "label": "Crew",
+      "data": [
+        {
+          "role": "Casting",
+          "name": "$t(author)"
+        },
+        {
+          "role": "Set Builder",
+          "name": "Hyper Text Markup Language"
+        },
+        {
+          "role": "Property Master",
+          "name": "Node Package Manager"
+        },
+        {
+          "role": "Script Supervisor",
+          "name": "Node.js"
+        },
+        {
+          "role": "Location Scout",
+          "name": ["Cloudflare", "Docker"]
+        },
+        {
+          "role": "Boom Operator",
+          "name": ["ESLint", "Google AI mode", "DevTools"]
+        },
+        {
+          "role": "Sound Mixer",
+          "name": "v0"
+        },
+        {
+          "role": "Foley Artist",
+          "name": "Claude"
+        },
+        {
+          "role": "Best Boy Rigging Grip",
+          "name": ["Prettier+", "Notion"]
+        },
+        {
+          "role": "Key Rigging Grip",
+          "name": "Apple iPhone"
+        },
+        {
+          "role": "Best Boy Grip",
+          "name": "Tabler Icons"
+        },
+        {
+          "role": "Key Grip",
+          "name": "Scalable Vector Graphics"
+        },
+        {
+          "role": "Best Boy Electric",
+          "name": "React Bits"
+        },
+        {
+          "role": "Gaffer",
+          "name": "Panic Nova"
+        },
+        {
+          "role": "Clapper Boy",
+          "name": ["Motion", "Figma"]
+        },
+        {
+          "role": "Focus Puller",
+          "name": "Adobe AI"
+        },
+        {
+          "role": "Cinematographer",
+          "name": "Adobe Photoshop"
+        },
+        {
+          "role": "Subtitle",
+          "name": "I18next"
+        },
+        {
+          "role": "Makeup Assistant",
+          "name": ["Sassy Cascading Style Sheets", "CSS Modules", "clsx"]
+        },
+        {
+          "role": "Makeup Artist",
+          "name": "Syntactically Awesome Style Sheets"
+        },
+        {
+          "role": "Costume Designer",
+          "name": "Cascading Style Sheets"
+        },
+        {
+          "role": "Stunt Coordinator",
+          "name": "GitHub"
+        },
+        {
+          "role": "Production Coordinator",
+          "name": "macOS"
+        },
+        {
+          "role": "Production Designer",
+          "name": "Adobe Illustrator"
+        },
+        {
+          "role": "Art Director",
+          "name": "$t(author)"
+        }
+      ]
+    },
+    "soleCredit": {
+      "label": "",
+      "data": [
+        {
+          "role": "Music by",
+          "name": "$t(author)"
+        },
+        {
+          "role": "Executive Producer",
+          "name": "$t(author)"
+        },
+        {
+          "role": "Written by",
+          "name": "$t(author)"
+        },
+        {
+          "role": "Directed by",
+          "name": "$t(author)"
+        }
+      ]
+    }
   },
   "vistas": [
     {
@@ -382,5 +405,11 @@
       "content": "Nam eleifend ornare nisl id sollicitudin. In nec consectetur eros, sit amet sollicitudin diam. Nullam sodales urna id urna malesuada, et accumsan eros hendrerit. Proin sodales hendrerit metus, a ultrices ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac tortor placerat, sagittis diam sed, luctus nisl."
     }
   ],
-  "flamboyant": "Are you ready to <br /><em>hire</em> me?"
+  "flamboyant": "Are you ready to <br /><em>hire</em> me?",
+  "messages": {
+    "code": "Code is Melody",
+    "logic": "Logic is Rhythm",
+    "velo": "Elegance is Velocity",
+    "sem": "Keep Semantic, Express Boldly"
+  }
 }

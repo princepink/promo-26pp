@@ -1,43 +1,38 @@
 import { List, Title, Text } from '@mantine/core';
 // import styles from './SkillContent.module.scss';
 
-type SkillItem = string | SkillItem[];
+type SkillItem = string | SkillData;
+
+type SkillData = {
+  title: string;
+  items: SkillItem[];
+};
 
 interface SkillProps {
-  key: string;
-  skill: {
-    title: string;
-    items: SkillItem[];
-  };
+  skill: SkillData;
+  level?: number;
 }
 
-function RecursiveList({ items }: { items: SkillItem[] }) {
-  return (
-    <>
-      {items.map((item, index) => (
-        <List.Item key={index}>
-          {Array.isArray(item) ? (
-            <List withPadding mt="xs">
-              <RecursiveList items={item} />
-            </List>
-          ) : (
-            <Text>{item}</Text>
-          )}
-        </List.Item>
-      ))}
-    </>
-  );
-}
+export const SkillContent = ({ skill, level = 3 }: SkillProps) => {
+  const titleOrder = Math.min(level, 6) as 1 | 2 | 3 | 4 | 5 | 6;
 
-export const SkillContent = ({ key, skill }: SkillProps) => {
   return (
     <>
-      <Title id={key} order={3}>
-        {skill.title}
-      </Title>
-      <List withPadding>
-        <RecursiveList items={skill.items} />
+      <Title order={titleOrder}>{skill.title}</Title>
+
+      <List>
+        {skill.items.map((item, index) => (
+          <List.Item key={index}>
+            {typeof item === 'string' ? (
+              <Text>{item}</Text>
+            ) : (
+              <SkillContent skill={item} level={level + 1} />
+            )}
+          </List.Item>
+        ))}
       </List>
     </>
   );
 };
+
+export type { SkillData };

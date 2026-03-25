@@ -141,3 +141,4 @@ dist
 # additional
 .pearlpuppy
 .nova
+__*
