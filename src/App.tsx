@@ -22,7 +22,7 @@ export default function App() {
       <ReactLenis root options={{ lerp: 0.2, duration: 1.5 }}>
         <TimelineProvider>
           <Box id="app-root">
-            {/* <Box id="bg-wave">
+            <Box id="bg-wave">
               <Waves
                 lineColor="cyan"
                 backgroundColor="transparent"
@@ -34,7 +34,7 @@ export default function App() {
                 tension={0.01}
                 maxCursorMove={120}
               />
-            </Box> */}
+            </Box>
             <Page />
           </Box>
         </TimelineProvider>
